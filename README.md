@@ -40,7 +40,7 @@ README.md
 1. Clonar repositorio
 
 ```
-git clone https://github.com/[TU_USUARIO](https://github.com/adrianfranciscobarbosasalazar-pixel/mi-app-supabase.git)/mi-app-supabase.git
+git clone https://github.com/(https://github.com/adrianfranciscobarbosasalazar-pixel/mi-app-supabase.git)/mi-app-supabase.git
 cd mi-app-supabase
 ```
 
