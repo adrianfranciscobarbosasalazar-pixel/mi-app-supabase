@@ -1,6 +1,6 @@
 # Mi App Supabase
 
-Proyecto básico que conecta una aplicación con una base de datos en la nube usando Supabase. Permite registrar y consultar estudiantes con nombre y carrera.
+Proyecto básico que conecta una aplicación con una base de datos en la nube usando Supabase. Permite registrar estudiantes con nombre y carrera.
 
 ---
 
@@ -40,7 +40,7 @@ README.md
 1. Clonar repositorio
 
 ```
-git clone https://github.com/TU_USUARIO/mi-app-supabase.git
+git clone https://github.com/[TU_USUARIO](https://github.com/adrianfranciscobarbosasalazar-pixel/mi-app-supabase.git)/mi-app-supabase.git
 cd mi-app-supabase
 ```
 
@@ -69,7 +69,7 @@ npx serve
 Abrir en navegador:
 
 ```
-http://localhost:3000
+[http://localhost:3000](http://127.0.0.1:5500/index.html)
 ```
 
 ---
@@ -91,7 +91,7 @@ Para permitir acceso se usan estas policies:
 SELECT
 
 ```
-create policy "lectura publica"
+create policy "lectura publica estudiantes"
 on estudiantes
 for select
 to public
@@ -120,7 +120,7 @@ with check (true);
 
 ## Autor
 
-Alessandra Barbosa
+Adrian Francisco Barbosa Salazar
 
 ---
 
