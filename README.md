@@ -22,7 +22,7 @@ Proyecto básico que conecta una aplicación con una base de datos en la nube us
 
 ---
 
-## Estructura del proyecto
+## Estructura del proyecto base, puede cambiar
 
 ```
 mi-app-supabase/
