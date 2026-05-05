@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estudiantes</title>
+</head>
+<body>
+
+<h2>Agregar estudiante</h2>
+
+<input type="text" id="nombre" placeholder="Nombre">
+<input type="text" id="carrera" placeholder="Carrera">
+<button onclick="guardar()">Guardar</button>
+
+<script type="module">
+  import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
+
+  const supabase = createClient(
+    'https://zuezukiqyloeovytftki.supabase.co',
+    'sb_publishable_p19qNxKv_wrqjn0Qn7rltg_M166oqyG'
+  )
+
+  async function guardar() {
+    const nombre = document.getElementById('nombre').value
+    const carrera = document.getElementById('carrera').value
+
+    const { error } = await supabase
+      .from('estudiantes')
+      .insert([{ nombre, carrera }])
+
+    if (error) {
+      alert('Error')
+      console.log(error)
+    } else {
+      alert('Guardado')
+    }
+  }
+
+  window.guardar = guardar
+</script>
+
+</body>
+</html>
